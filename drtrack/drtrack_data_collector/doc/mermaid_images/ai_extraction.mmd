@@ -1,0 +1,25 @@
+graph LR
+    subgraph "入力"
+        A[👁️ ウェブページ<br/>または画像]
+    end
+    
+    subgraph "AI処理"
+        B[🧠 AIが内容を理解]
+        C[📝 必要な情報を<br/>識別・抽出]
+    end
+    
+    subgraph "出力"
+        D[📋 医師名: 山田太郎<br/>専門: 循環器内科<br/>月曜: 午前診療<br/>火曜: 休診...]
+    end
+    
+    A --> B
+    B --> C
+    C --> D
+    
+    E[💡 人間が読むように<br/>ページを理解] -.-> B
+
+    style A fill:#e8f4f8
+    style B fill:#5dade2,color:#fff
+    style C fill:#3498db,color:#fff
+    style D fill:#2ecc71
+    style E fill:#f39c12

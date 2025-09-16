@@ -1,0 +1,16 @@
+flowchart LR
+    A[📋 医療機関リスト<br/>約1万件] --> B[🌐 ウェブサイト<br/>アクセス]
+    B --> C[🔗 リンク探索]
+    C --> D[🤖 AI分析]
+    D --> E{専門医ページ？}
+    E -->|Yes| F[✅ URL保存]
+    E -->|No| C
+    F --> G[📊 データベース保存]
+
+    style A fill:#e8f4f8
+    style B fill:#d4e6f1
+    style C fill:#aed6f1
+    style D fill:#5dade2
+    style E fill:#3498db
+    style F fill:#2ecc71
+    style G fill:#9b59b6,color:#fff

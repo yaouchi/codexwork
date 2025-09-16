@@ -1,0 +1,18 @@
+graph LR
+    subgraph "DrTrackシステム"
+        A[🔍 URL収集機能<br/>医療機関サイトから<br/>専門医ページを探す]
+        B[👨‍⚕️ 専門医情報収集<br/>医師のプロフィール<br/>情報を抽出]
+        C[📅 外来情報収集<br/>診療スケジュール<br/>を抽出]
+    end
+    
+    D[医療機関<br/>ウェブサイト] --> A
+    A --> B
+    A --> C
+    B --> E[構造化データ<br/>として保存]
+    C --> E
+
+    style A fill:#4a90e2,color:#fff
+    style B fill:#50c878,color:#fff
+    style C fill:#ff6b6b,color:#fff
+    style D fill:#ffd93d
+    style E fill:#6c5ce7,color:#fff

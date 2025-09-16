@@ -1,0 +1,25 @@
+graph TD
+    subgraph "様々な形式の外来担当医表"
+        A[🌐 HTMLページ<br/>通常のウェブページ]
+        B[🖼️ 画像ファイル<br/>JPEG/PNG形式]
+        C[📄 PDFファイル<br/>ダウンロード資料]
+    end
+    
+    subgraph "DrTrackの処理"
+        D[🤖 AI<br/>Gemini 2.5 Flash Lite]
+    end
+    
+    subgraph "統一された出力"
+        E[📊 構造化データ<br/>医師名・曜日・時間]
+    end
+    
+    A --> D
+    B --> D
+    C --> D
+    D --> E
+
+    style A fill:#ff9999
+    style B fill:#99ccff
+    style C fill:#99ff99
+    style D fill:#ffcc99
+    style E fill:#cc99ff

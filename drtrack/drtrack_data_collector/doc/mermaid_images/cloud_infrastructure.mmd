@@ -1,0 +1,23 @@
+graph TB
+    subgraph "Google Cloud Platform"
+        A[☁️ Cloud Run Jobs<br/>処理実行環境]
+        B[💾 Cloud Storage<br/>データ保存]
+        C[📊 BigQuery<br/>データ分析基盤]
+        D[🔐 Secret Manager<br/>認証情報管理]
+    end
+    
+    E[🖥️ DrTrackシステム] --> A
+    A --> B
+    B --> C
+    A --> D
+    
+    F[⚡ 自動スケーリング<br/>処理量に応じて<br/>リソース調整] -.-> A
+    G[🛡️ セキュアな環境<br/>データ保護] -.-> B
+
+    style A fill:#4285f4,color:#fff
+    style B fill:#34a853,color:#fff
+    style C fill:#fbbc04
+    style D fill:#ea4335,color:#fff
+    style E fill:#6c5ce7,color:#fff
+    style F fill:#00b894,color:#fff
+    style G fill:#e17055,color:#fff

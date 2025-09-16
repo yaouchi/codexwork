@@ -1,0 +1,42 @@
+# DrTrackデータ収集システム - 依存関係
+
+# Google Cloud
+google-cloud-storage==2.10.0
+google-generativeai==0.8.2
+
+# HTTP・非同期処理
+aiohttp==3.9.1
+requests==2.31.0
+
+# データ処理
+pandas==2.0.3
+numpy==1.24.3
+
+# 画像・PDF処理
+Pillow==10.0.0
+PyMuPDF==1.23.8
+
+# エラーハンドリング・リトライ
+tenacity==8.2.3
+
+# 日時処理
+pytz==2023.3
+
+# システム監視
+psutil==5.9.5
+
+# HTML処理
+beautifulsoup4==4.12.2
+html5lib==1.1
+
+# 文字エンコーディング検出
+chardet==5.2.0
+
+# ログ・JSON処理（標準のjsonとloggingを使用）
+
+# URL処理・正規表現
+urllib3==2.0.4
+
+# テスト用（オプション）
+pytest==7.4.0
+pytest-asyncio==0.21.1
